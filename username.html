@@ -8,20 +8,20 @@
   <style>
     body {
       background-color: black;
-    }
-    .header-container {
-      position: relative;
-      max-height: 100%;
-      max-width: 100%;
-      margin: 0;
       text-align: center;
     }
-    .soon>img {
-      max-height: 70%;
-      max-width: auto;
+    .header-container {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      margin: 0;
+    }
+    img {
+      max-height: 600px;
+      max-width: 600px;
     }
     .soon {
-      margin-top: 100px;
       font-family: 'Poppins', sans-serif;
       font-weight: 900;
       font-size: 30px;
@@ -44,11 +44,27 @@
       color: #06E1D3;
     }
 
+    @media screen and (max-width: 600px) {
+      img {
+        max-height: 300px;
+        max-width: 300px;
+      }
+      .soon {
+        font-size: 20px;
+      }
+      .check {
+        font-size: 10px;
+      }
+      .check>a {
+        font-size: 10px;
+      }
+    }
+
   </style>
 </head>
 <body>
+  <img src="170713_USERNAME_ID5.png"/>
   <div class="header-container">
-    <img src="170713_USERNAME_ID5.png"/>
     <p class="soon">coming soon</p>
     <p class="check">check out our <a href="https://www.linkedin.com/company-beta/18093653/" target="_blank">LinkedIn</a> profile</p>
   </div>
